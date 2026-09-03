@@ -16,11 +16,13 @@ export default function Header() {
 
                 <NavLink to="/products" style={({ isActive }) => isActive ? activeStyles : undefined}> Products </NavLink>
 
-                <NavLink to="/admin" style={({ isActive }) => isActive ? activeStyles : undefined}> Cart </NavLink>
+                <div className="left-nav">
+                    <NavLink to="/admin" style={({ isActive }) => isActive ? activeStyles : undefined}> Cart </NavLink>
 
-                <NavLink to="/login" style={({ isActive }) => isActive ? activeStyles : undefined}> Wishlist </NavLink>
+                    <NavLink to="/login" style={({ isActive }) => isActive ? activeStyles : undefined}> Wishlist </NavLink>
 
-                <NavLink to="/profile" style={({ isActive }) => isActive ? activeStyles : undefined}> Profile </NavLink>
+                    <NavLink to="/profile" style={({ isActive }) => isActive ? activeStyles : undefined}> Profile </NavLink>
+                </div>
             </nav>
         </div>
     )

@@ -19,3 +19,13 @@ a {
     padding: 1rem;
     font-size: 1.5rem;
 }
+
+.home {
+    margin: 3rem;
+}
+
+.left-nav {
+    margin-left: auto;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
