@@ -10,9 +10,9 @@ export default function Header() {
     }
 
     return (
-        <div className="navbar">
+        <div className="font-serif">
             <nav>
-                <NavLink to="/" style={({ isActive }) => isActive ? activeStyles : undefined}> Home </NavLink>
+                <NavLink to="/"> Rove & co. </NavLink>
 
                 <NavLink to="/products" style={({ isActive }) => isActive ? activeStyles : undefined}> Products </NavLink>
 

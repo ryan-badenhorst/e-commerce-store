@@ -1,15 +1,40 @@
+import homeHero from "../images/home-hero-five.jpg"
+
 export default function Home() {
     return (
-        <div className="home">
-            <h1>Welcome to our store</h1>
+        <>  
+            <div className="relative">
+                <img
+                    src={homeHero}
+                    alt="A man and a woman wearing jewelry in an everyday setting"
+                    className="w-full"
+                />
 
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio delectus molestias corporis, non dolorum unde, a fuga vel placeat officia aperiam molestiae sed aut fugiat cupiditate iure excepturi blanditiis, aspernatur quia. Expedita nam et incidunt quae voluptatum iste vel, quidem saepe officia, animi tenetur explicabo debitis labore sed architecto sequi?
-            </p>
+                <div className="absolute inset-0 flex items-center">
+                    <div className="ml-36">
+                        <h1 className="text-4xl font-bold text-white">
+                            Elevate the Everyday
+                            <br />
+                            Modern pieces. Effortless style.
+                            <br />
+                            Discover jewellery and accessories designed to add something extra to the everyday.
+                        </h1>
+                    </div>
+                </div>
+            </div>
 
-            <button>Products for men</button>
-            <button>Products for woman</button>
-            <button>Products for all</button>
-        </div>
+            <div className="mx-34 my-10">
+                
+                <h1>Explore Our Collections</h1>
+
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio delectus molestias corporis, non dolorum unde, a fuga vel placeat officia aperiam molestiae sed aut fugiat cupiditate iure excepturi blanditiis, aspernatur quia. Expedita nam et incidunt quae voluptatum iste vel, quidem saepe officia, animi tenetur explicabo debitis labore sed architecto sequi?
+                </p>
+
+                <button>Products for men</button>
+                <button>Products for woman</button>
+                <button>Products for all</button>
+            </div>
+        </>
     )
 }
