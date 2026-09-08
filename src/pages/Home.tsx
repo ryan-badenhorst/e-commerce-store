@@ -21,17 +21,13 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="mx-34 my-10">
+            <div className="mx-34 my-8">
                 
-                <h1>Explore Our Collections</h1>
+                <h1 className="font-serif text-center text-4xl mb-5">Explore Our Collections</h1>
 
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio delectus molestias corporis, non dolorum unde, a fuga vel placeat officia aperiam molestiae sed aut fugiat cupiditate iure excepturi blanditiis, aspernatur quia. Expedita nam et incidunt quae voluptatum iste vel, quidem saepe officia, animi tenetur explicabo debitis labore sed architecto sequi?
-                </p>
-
-                <button>Products for men</button>
-                <button>Products for woman</button>
-                <button>Products for all</button>
+                <div className="flex flex-row gap-5 border">
+                    <div className=""></div>
+                </div>
             </div>
         </>
     )
