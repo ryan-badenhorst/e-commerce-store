@@ -4,25 +4,28 @@
     body {
         @apply p-0 font-sans;
     }
-}
 
-nav {
-    display: flex;
-    gap: 0.75rem;
-    background-color: rgb(250, 245, 232);
-}
+    nav {
+        @apply flex gap-3 bg-[#f6ebdc]
+    }
 
-a {
-    padding: 1rem;
-    font-size: 1.5rem;
-}
+    .home-link {
+        @apply border relative flex-1 aspect-2/1 overflow-hidden p-0 font-serif;
+    }
 
-.home {
-    margin: 2rem;
-}
+    .home-link img {
+        @apply w-full h-full object-cover;
+    }
 
-.left-nav {
-    margin-left: auto;
-    padding: 1rem;
-    font-size: 1.5rem;
+    .home-overlay {
+        @apply absolute inset-0 bg-black/5;
+    }
+
+    .home-link span {
+        @apply absolute bottom-5 left-5 text-2xl text-white;
+    }
+
+    .header a {
+        @apply p-4 text-2xl
+    }
 }

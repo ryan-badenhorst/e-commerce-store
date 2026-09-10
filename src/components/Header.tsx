@@ -10,13 +10,13 @@ export default function Header() {
     }
 
     return (
-        <div className="font-serif">
+        <div className="header font-serif">
             <nav>
                 <NavLink to="/"> Rove & co. </NavLink>
 
                 <NavLink to="/products" style={({ isActive }) => isActive ? activeStyles : undefined}> Products </NavLink>
 
-                <div className="left-nav">
+                <div className="ml-auto p-4 text-2xl">
                     <NavLink to="/login" style={({ isActive }) => isActive ? activeStyles : undefined}> Wishlist </NavLink>
 
                     <NavLink to="/admin" style={({ isActive }) => isActive ? activeStyles : undefined}> Cart </NavLink>
