@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 
 import homeHero from "../images/home-hero.jpg"
 import mensHome from "../images/mens-home.jpg"
+import womensHome from "../images/womens-home.jpg"
 
 export default function Home() {
     return (
@@ -24,9 +25,9 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="mx-25 my-5">
+            <div className="mx-25 my-10">
                 
-                <h1 className="font-serif text-center text-4xl mb-5">Explore Our Collections</h1>
+                <h1 className="font-serif text-center text-4xl mb-10">Explore Our Collections</h1>
 
                 <div className="flex flex-row gap-5 justify-between">
                     <Link to="/products?gender=men" className="home-link">
@@ -36,8 +37,22 @@ export default function Home() {
 
                         <span>For men</span>
                     </Link>
-                    <Link to="#" className="home-link">For woman</Link>
-                    <Link to="#" className="home-link">For everyone</Link>
+
+                    <Link to="/products?gender=women" className="home-link">
+                        <img src={womensHome} alt="Womens jewelry" />
+
+                        <div className="home-overlay"></div>
+
+                        <span>For women</span>
+                    </Link>
+
+                    <Link to="/products?gender=unisex" className="home-link">
+                        <img src={womensHome} alt="Unisex jewelry" />
+
+                        <div className="home-overlay"></div>
+
+                        <span>For everyone</span>
+                    </Link>
                 </div>
             </div>
         </>
