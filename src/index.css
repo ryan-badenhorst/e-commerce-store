@@ -10,7 +10,8 @@
     }
 
     .home-link {
-        @apply relative flex-1 aspect-2/1 overflow-hidden p-0 font-serif;
+        @apply relative flex-1 aspect-2/1 overflow-hidden p-0 font-serif 
+            shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl;
     }
 
     .home-link img {
@@ -22,7 +23,7 @@
     }
 
     .home-link span {
-        @apply absolute bottom-5 left-5 text-5xl text-amber-300;
+        @apply absolute bottom-5 left-5 text-5xl text-white;
     }
 
     .header a {
