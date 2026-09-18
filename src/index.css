@@ -2,11 +2,11 @@
 
 @layer base {
     body {
-        @apply p-0 font-sans;
+        @apply p-0 font-sans bg-[#ece7e1];
     }
 
     nav {
-        @apply flex gap-3 bg-[#f6ebdc]
+        @apply flex gap-3
     }
 
     .home-link {
