@@ -3,10 +3,8 @@ import { NavLink } from "react-router-dom";
 
 export default function Header() {
     const activeStyles: CSSProperties = {
-        fontWeight: "bold",
-        textDecoration: "underline",
-        color: "#161616",
-        backgroundColor: "#bebebe"
+        backgroundColor: "#DCFCE7",
+        fontWeight: "bold"
     }
 
     return (
